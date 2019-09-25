@@ -17,9 +17,19 @@
                     <div class="pr-5"><strong>187</strong> Following</div>
                 </div>
 
-
+                <div class="pt-4 font-weight-bold">mdrahony.online</div>
+                <div>Web Development meets passionate craftsmanship</div>
+                <div>
+                    <a href="http://www.mdrahony.online">www.mdrahony.online</a>
+                </div>
             </div>
         </div>
     </div>
+    <div class="row">
+        <col-4><img src="" alt=""></col-4>
+        <col-4><img src="" alt=""></col-4>
+        <col-4><img src="" alt=""></col-4>
+    </div>
+    
 </div>
 @endsection
