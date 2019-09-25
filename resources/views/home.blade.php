@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-3 p-4">
+        <div class="col-3 pt-5 pl-5">
             <div>
                 <img src="/svg/MDWDLogo2.3.svg" style="height:100px;">
             </div>
@@ -26,10 +26,12 @@
         </div>
     </div>
     <div class="row">
-        <col-4><img src="" alt=""></col-4>
-        <col-4><img src="" alt=""></col-4>
-        <col-4><img src="" alt=""></col-4>
+        <div class="col-4"><img src="http://mdrahony.online/images/ssp/ssp.PNG" alt="" class="w-100"></div>
+        <div class="col-4"><img src="http://mdrahony.online/images/btimer/btimer.PNG" alt="" class="w-100"></div>
+        <div class="col-4"><img src="http://mdrahony.online/images/hrd/hrd.PNG" alt="" class="w-100"></div>
     </div>
+
+    
     
 </div>
 @endsection
