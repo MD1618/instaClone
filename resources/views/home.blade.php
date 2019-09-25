@@ -9,8 +9,10 @@
             </div>
         </div>
         <div class="col-9 p-5">
-            <div >
-                <h1>Martin Drahony Web Dev</h1>
+            <div>
+               
+                <h1>{{ $user->username }}</h1>
+                
                 <div class="d-flex">
                     <div class="pr-5"><strong>987k</strong> Likes</div>
                     <div class="pr-5"><strong>1.8M</strong> followers</div>
@@ -31,7 +33,7 @@
         <div class="col-4"><img src="http://mdrahony.online/images/hrd/hrd.PNG" alt="" class="w-100"></div>
     </div>
 
-    
-    
+
+
 </div>
 @endsection
