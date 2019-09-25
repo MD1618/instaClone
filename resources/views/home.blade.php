@@ -19,10 +19,10 @@
                     <div class="pr-5"><strong>187</strong> Following</div>
                 </div>
 
-                <div class="pt-4 font-weight-bold">mdrahony.online</div>
-                <div>Web Development meets passionate craftsmanship</div>
+                <div class="pt-4 font-weight-bold">{{ $user->profile->title}}</div>
+                <div>{{ $user->profile->description}}</div>
                 <div>
-                    <a href="http://www.mdrahony.online">www.mdrahony.online</a>
+                    <a href="http://{{ $user->profile->url}}">{{ $user->profile->url?? 'N/A'}}</a>
                 </div>
             </div>
         </div>
