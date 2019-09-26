@@ -8,6 +8,12 @@ class PostsController extends Controller
 {
     //
 
+    public function __construct()
+    {
+        //makes sure the authentication is applied to the methods below
+        $this->middleware('auth');
+    }
+
     public function create(){
 
         return view('posts.create');
