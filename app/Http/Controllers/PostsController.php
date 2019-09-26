@@ -27,8 +27,8 @@ class PostsController extends Controller
             'image' => ['required','image'],
         ]);
         
-        // get image for request array, store it in uploads folder(created if doesnt exist) 
-        // in the public folder of the storage folder and return the file path to a variable
+        // get image for request array, store it in uploads folder in the public folder
+        //  of the storage folder(created if doesnt exist) and return the file path to a variable
         // run php artisan storage:link to link this to the public folder
         $imagePath = request('image')->store('uploads','public');
 
