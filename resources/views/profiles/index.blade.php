@@ -10,9 +10,10 @@
         </div>
         <div class="col-9 p-5">
             <div>
-               
-                <h1>{{ $user->username }}</h1>
-                
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <h1>{{ $user->username }}</h1>
+                    <a href="/p">Add New Post</a>
+                </div>
                 <div class="d-flex">
                     <div class="pr-5"><strong>987k</strong> Likes</div>
                     <div class="pr-5"><strong>1.8M</strong> followers</div>
