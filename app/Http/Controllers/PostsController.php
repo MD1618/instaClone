@@ -48,9 +48,11 @@ class PostsController extends Controller
     }
 
 
-    public function show($post)
+    public function show(\App\Post $post)
     {
-        dd($post);
+        return view('posts.show', [
+            'post' => $post, // or compact('post') does the same thing
+        ]);
     }
 }
 
