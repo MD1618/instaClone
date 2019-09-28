@@ -31,6 +31,6 @@ Route::get('/p/{post}', 'PostsController@show');
 
 Route::post('/p', 'PostsController@store');
 
-Route::post('follow/{user}', function(){
+Route::post('/follow/{user}', function(){
     return ['success'];
 });
