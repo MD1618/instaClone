@@ -11,13 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-// Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
@@ -26,6 +20,7 @@ Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edi
 Route::patch('/profile/{user}', 'ProfilesController@update')->name('profile.update');
 
 // order here is important otherwise the {post} will take create instead
+Route::get('/', 'PostsController@index');
 Route::get('/p/create', 'PostsController@create');
 Route::get('/p/{post}', 'PostsController@show');
 
