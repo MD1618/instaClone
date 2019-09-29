@@ -13,7 +13,7 @@
                 <div class="d-flex justify-content-between align-items-baseline">
                     <div class="d-flex align-items-center pb-3">
                         <h2>{{ $user->username }}</h2>
-                    <follow-button user-id="{{$user->id}}"></follow-button>
+                    <follow-button user-id="{{$user->id}}" follows="{{ $follows }}"></follow-button>
                     </div>
                     @can('update', $user->profile)
                     <a href="/p/create">Add New Post</a>
@@ -26,8 +26,8 @@
 
                 <div class="d-flex">
                     <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> Posts</div>
-                    <div class="pr-5"><strong>1.8M</strong> followers</div>
-                    <div class="pr-5"><strong>187</strong> Following</div>
+                    <div class="pr-5"><strong>{{$user->profile->followers->count()}}</strong> Followers</div>
+                    <div class="pr-5"><strong>{{$user->following->count()}}</strong> Following</div>
                 </div>
 
                 <div class="pt-4 font-weight-bold">{{ $user->profile->title}}</div>
