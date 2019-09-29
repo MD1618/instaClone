@@ -7,7 +7,7 @@
 <script>
     export default {
 
-        props:['userId'],
+        props:['user-id'],
 
         mounted() {
             console.log('Component mounted.')
@@ -15,7 +15,7 @@
 
         methods: {
             followUser(){
-                axios.post('/follow/' + this.userId)
+                axios.post('/follow/' + this.user-id)
                 .then(response => {
                     console.log(response.data);
                 });
