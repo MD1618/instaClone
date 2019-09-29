@@ -27,7 +27,8 @@
             <div class="container">
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div>
-                        <img src="/svg/MDWDLogo2.3.svg" style="height:30px;padding-right:10px;border-right:2px solid #666;margin-right:10px;">
+                        <img src="/svg/MDWDLogo2.3.svg"
+                            style="height:30px;padding-right:10px;border-right:2px solid #666;margin-right:10px;">
                     </div>
                     <div style="padding-top:5px;">
                         Insta-Clone
@@ -65,6 +66,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                               
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
